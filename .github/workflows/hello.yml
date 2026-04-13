@@ -1,24 +1,19 @@
-#This is workflow name
+---
 name: Seema
-#Runs on triggers
 on:
   push:
-    branches: [main]
-
-#There are jobs inside the workflows
+    branches:
+      - main
 jobs:
   greet:
-
-  #This is github runners
     runs-on: ubuntu-latest
     steps:
       - name: say hello to users
         run: echo "Hello Dosto"
       - name: say hello to username
         run: echo "Hello $USER"
-details: 
-  runs-on: ubuntu-latest
-  steps:
-    -name: Version of Docker and python
-     run: docker --version && python --version
-  
+  seema:
+    runs-on: ubuntu-latest
+    steps:
+      -name: show what is the version of docker
+      run: docker --version
