@@ -1,2 +1,18 @@
-Namd: Seema
-Address: Pune
+#This is workflow name
+name: Seema
+#Runs on triggers
+on:
+  push:
+    branches: [main]
+
+#There are jobs inside the workflows
+jobs:
+  greet:
+
+  #This is github runners
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to users
+        run: echo "Hello Dosto"
+      - name: say hello to username
+        run: echo "Hello $USER"
