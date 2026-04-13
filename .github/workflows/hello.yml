@@ -15,5 +15,8 @@ jobs:
   seema:
     runs-on: ubuntu-latest
     steps:
-      -name: show what is the version of docker
-      run: docker --version
+      - name: show what is the version of docker
+        run: docker --version
+
+
+
